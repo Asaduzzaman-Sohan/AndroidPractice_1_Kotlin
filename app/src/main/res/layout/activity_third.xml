@@ -2,16 +2,16 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout"
+    android:id="@+id/constraintBinding"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ThirdActivity">
 
     <ImageView
-        android:id="@+id/displayImg"
+        android:id="@+id/displayView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:src="@drawable/savana"
+        android:src="@drawable/tree"
         android:scaleType="centerCrop"
         android:visibility="gone"
         app:layout_constraintTop_toTopOf="parent"
@@ -19,48 +19,48 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
-        android:id="@+id/showImg"
+        android:id="@+id/showBtn"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Show Image"
+        android:backgroundTint="#81EA85"
         android:textAllCaps="false"
-        android:backgroundTint="#C6ACF3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
-        android:id="@+id/hideImg"
+        android:id="@+id/hideBtn"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Hide Image"
         android:textAllCaps="false"
-        android:backgroundTint="#9EB3F6"
         android:layout_marginTop="10dp"
+        android:backgroundTint="#81EADE"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/showImg"/>
+        app:layout_constraintTop_toBottomOf="@id/showBtn"/>
 
     <Button
-        android:id="@+id/nextBtn"
+        android:id="@+id/nextPage"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:text="Next"
         android:textAllCaps="false"
-        android:backgroundTint="#ACF3B0"
+        android:backgroundTint="#BAA2FB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_margin="20dp"
         />
 
     <Button
-        android:id="@+id/bindingPage"
+        android:id="@+id/noBinding"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:text="Binding"
+        android:text="No binding"
         android:textAllCaps="false"
-        android:backgroundTint="#9EC9F6"
+        android:backgroundTint="#F6E09E"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_margin="20dp"

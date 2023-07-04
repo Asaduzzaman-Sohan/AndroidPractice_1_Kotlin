@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var showBtn: Button
     private lateinit var hideBtn: Button
     private lateinit var nextBtn: Button
+    private lateinit var bindingPage: Button
     private lateinit var displayImg: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         hideBtn = findViewById(R.id.hideImg)
         nextBtn = findViewById(R.id.nextBtn)
         displayImg = findViewById(R.id.displayImg)
+        bindingPage = findViewById(R.id.bindingPage)
         val constraintLayout = findViewById<ConstraintLayout>(R.id.constraintLayout)
 
         showBtn.setOnClickListener(View.OnClickListener {
@@ -65,6 +67,11 @@ class MainActivity : AppCompatActivity() {
         nextBtn.setOnClickListener(View.OnClickListener {
             val nextPage = Intent(this@MainActivity, SecondActivity::class.java)
             startActivity(nextPage)
+        })
+
+        bindingPage.setOnClickListener(View.OnClickListener {
+            val moveToBinding = Intent(this@MainActivity, ThirdActivity::class.java)
+            startActivity(moveToBinding)
         })
 
     }
